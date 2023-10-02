@@ -183,9 +183,11 @@ public class ManagePuzzleGame : MonoBehaviour
                 score += 1;
                 ganhou = true;
 
-                if (score == 0) {
+                if (score == 1) {
                     Invoke(nameof(setupJogo), 10);
-                } else {
+                } 
+                
+                if (score == 2) {
                     Invoke(nameof(chamaMenu), 10);
                 }
             }
